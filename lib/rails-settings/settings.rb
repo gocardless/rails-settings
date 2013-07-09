@@ -2,6 +2,7 @@ module RailsSettings
   class Settings < ActiveRecord::Base
 
     self.table_name = 'settings'
+    attr_accessible :var
 
     class SettingNotFound < RuntimeError; end
 
